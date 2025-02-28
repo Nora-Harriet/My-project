@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleven Meals</title>
+    <link rel="stylesheet" href="hii.css">
+
+    <!-- Font Awesome CDN (Add this in your <head>) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+   
+
+    
+       
+        <!-- Fixed Navigation Bar -->
+        <header>
+           <div class="logo-container">
+               <img src="Logo.png" alt="Restaurant Logo" class="logo">
+
+               <span class="logo-text" >Eleven Meals</span>
+           </div>
+
+
+           <div class="search-bar">
+               <input type="text" placeholder="search">
+               <button type="submit"><i class="fa fa-search"></i></button>
+           </div>
+
+           
+          <nav>
+           <ul class="nav-links">
+               <li><a href="index.html">Home</a></li>
+               <li><a href="menu.html">Menu</a></li>
+               <li><a href="about.html">About</a></li>
+               <li><a href="blog.html">Blog</a></li>
+               <li><a href="contact.html">Contact</a></li>
+           </ul>
+           <input type="checkbox" id="menu-toggle">
+           <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+           
+       </nav>
+   </header>
+
+            
+        
+
+
+
+<body class="menu-page">
+    <section id="menu">
+        <h1>OUR MENU</h1>
+        <h2>Fresh Ingredients, Authentic Flavours</h2>
+
+        <div class="menu-category">
+            <div class="menu-text">
+                <h3>LOCAL DELICACIES</h3>
+                <ul>
+                    <li>Jollof rice <span>&#8373;40</span></li>
+                    <li>Waakye <span>&#8373;40</span></li>
+                    <li>Mashed plantain(&#603;t&#596;) <span>&#8373;30</span></li>
+                    <li>Red Red(gob&#603;)<span>&#8373;30</span></li>
+                </ul>
+            </div>
+            <div class="menu-image">
+                <img src="Hipics/pic 17.jpg" alt="Local delicacies">
+            </div>
+        </div>
+
+        <div class="menu-category reverse">
+            <div class="menu-image">
+                <img src="Hipics/pic 23.jpg" alt="smoothies">
+            </div>
+            <div class="menu-text">
+                <h3>SMOOTHIES</h3>
+                <ul>
+                    <li>Bissap(sobolo) smoothie<span>&#8373;15</span></li>
+                    <li>Tigernut smoothie <span>&#8373;15</span></li>
+                    <li>Green smoothie <span>&#8373;15</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="menu-category">
+            <div class="menu-text">
+                <h3>SALADS AND SAVORY FOODS</h3>
+                <ul>
+                    <li>Ghana-style pizza <span>&#8373;50</span></li>
+                    <li>Kelewele <span>&#8373;30</span></li>
+                    <li>Vegetable salad <span>&#8373;30</span></li>
+                    <li>Meat salad <span>&#8373;30</span></li>
+                </ul>
+            </div>
+            <div class="menu-image">
+                <img src="Hipics/pic 16.jpg" alt="Salads and savory foods">
+            </div>
+        </div>
+
+        
+        
+                <!-- Special Combo Section -->
+                <div class="special-combo">
+                    <div class="combo-image-large">
+                        <img src="Hipics/pic 19.jpg" alt="Special Combo Image">
+                    </div>
+                    <div class="combo-content">
+                        <h2>Special Combo</h2>
+                        <div class="combo-items">
+                            <div class="combo">
+                                <img src="Hipics/pic 100.jpg" alt="Combo 1">
+                                <h3>Combo 1</h3>
+                                <ul>
+                                    <li>Gob&#603; <strong>+ FREE</strong> kelewele - 1 Plate</li>
+                                    <li>Smoothie(Any)- 2 cups</li>
+                                    <li>Salad(Any) - 1 bowl</li>
+                                    <li><strong>+ FREE</strong> eleven keyholder</li>
+                                    <li><strong>= &#8373;100 </strong> </li>
+                                </ul>
+                            </div>
+                            <div class="combo">
+                                <img src="Hipics/pic 14.jpg" alt="Combo 2">
+                                <h3>Combo 2</h3>
+                                <ul>
+                                    <li>Kelewele - 1 BOX</li>
+                                    <li>Smoothie(Any)- 2 cups</li>
+                                    <li>Ghana-style pizza - 1 BOX  </li>
+                                    <li><strong>+ FREE</strong> eleven mug</li>
+                                    <li><strong>= &#8373;100 </strong> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+          </div>
+
+
+            <div class="order-section">
+                <div class="order-form">
+                    <h2>Place Your Order</h2>
+                    <form>
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+            
+                        <label for="food">Food Item:</label>
+                        <input type="text" id="food" name="food" required>
+            
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" required>
+            
+                        <label for="payment">Payment Method:</label>
+                        <select id="payment" name="payment">
+                            <option value="cash">Cash on Delivery</option>
+                            <option value="mobile">Mobile Money</option>
+                            <option value="card">Credit/Debit Card</option>
+                        </select>
+
+                        <!-- Mobile Money Field -->
+<div id="mobile-money-field">
+<h3 class="payment-heading">Mobile Money Details</h3>
+<label for="mobile-number">Mobile Number:</label>
+<input type="text" id="mobile-number" name="mobile-number">
+</div>
+
+<!-- Debit Card Fields -->
+<div id="card-details">
+<h3 class="payment-heading">Card Payment Details</h3>
+<label for="card-number">Card Number:</label>
+<input type="text" id="card-number" name="card-number">
+
+<label id="expiry-date" for="expiry">Expiry Date:</label>
+<input type="text" id="expiry" name="expiry">
+
+<label id="cvv" for="cvv">CVV:</label>
+<input type="text" id="cvv" name="cvv">
+</div>
+
+
+
+                        <button type="submit">Order Now</button>
+                    </form>
+                </div>
+            
+                <div class="order-image">
+                    <img src="Hipics/pic 12.jpg" alt="Plate of Waakye">
+                </div>
+            </div>
+    </section>
+
+
+
+
+
+
+    <footer>
+        <a href="https://www.facebook.com/share/18beH5otkM/?mibextid=qi2Omg" target="_blank">
+            <i class="fab fa-facebook"></i> Facebook
+        </a>
+        <a href="https://x.com" target="_blank">
+            <i class="fab fa-x-twitter"></i> X
+        </a>
+        <a href="https://www.instagram.com/thechopbar?igsh=YzljYTk1ODg3Zg==" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+    </footer>
+</body>
+</html>
